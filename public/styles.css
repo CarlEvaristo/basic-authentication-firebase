@@ -33,7 +33,11 @@ main{
     padding:6em 2em;
 }
 h1{
+    font-size: 2.5rem;
     margin-top:0;
+}
+h3{
+    font-size: 1.5rem;
 }
 input{
     box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
@@ -43,7 +47,15 @@ button {
     background-color: #357edd;
     color:#fff;
 }
+button:hover {
+    background-color: #4093ff;
+}
+button:active {
+    box-shadow: rgba(80, 87, 93, 0.688) 3px 3px 6px 0px inset;
+    background-color: #286fcb;
+}
 input,button {
+    font-size: 1.3rem;
     border-radius: 5px;
     margin: 0.4em;
     padding: 1em 1.2em;
