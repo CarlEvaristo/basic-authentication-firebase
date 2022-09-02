@@ -52,7 +52,7 @@ function App() {
         <button onClick={login}>Login</button>
       </div>
       <div className="inputWrapper">
-        <h3>User Logged In: {user ? user.email : "Not Logged In"} </h3>
+        <h3>{user ? `User Logged In: ${user.email}` : "Not Logged In"} </h3>
         {user && <button onClick={() => signOut(auth)}>Logout</button>}
       </div>
     </main>
