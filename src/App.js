@@ -53,7 +53,7 @@ function App() {
       </div>
       <div className="inputWrapper">
         <h3>User Logged In: {user ? user.email : "Not Logged In"} </h3>
-        <button onClick={() => signOut(auth)}>Logout</button>
+        {user && <button onClick={() => signOut(auth)}>Logout</button>}
       </div>
     </main>
   );
